@@ -9,11 +9,12 @@ Watch a directory and on any changes, execute the desired command
 [![MIT License](https://img.shields.io/npm/l/watch-and-exec.svg?style=flat-square)](http://opensource.org/licenses/MIT)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
 
+
 ## Usage
 
 ### `cli`
 
-```
+```sh
 npm i watch-and-exec -g
 watch-and-exec path/to/desired/dir 'command'
 ```
@@ -21,15 +22,16 @@ watch-and-exec path/to/desired/dir 'command'
 #### background process
 You can also use execute the watcher in the background
 
-```
+```sh
 nohup watch-and-exec path/to/desired/dir 'command' > /dev/null 2>&1 &
 ```
 
 ### local dependency
 
-```
+```sh
 npm i watch-and-exec -S
-
+```
+```js
 const exec = require('child_process').exec;
 const dir = 'path/to/directory';
 const command = 'some executable';
@@ -42,7 +44,7 @@ exec(`./node_modules/.bin/watch-and-exec -d=${dir} -c=${command}`, function(erro
 #### background process
 Use `nohup` to execute the watcher as a background process
 
-```
+```js
 exec(`nohup ./node_modules/.bin/watch-and-exec -d=${dir} -c=${command} > /dev/null 2>&1 &`, function(error, stdout, stderr) {
   assert.equal(error, null);
 });
