@@ -3,6 +3,12 @@ watch-and-exec
 
 Watch a directory and on any changes, execute the desired command
 
+[![Build Status](https://img.shields.io/travis/sarbbottam/watch-and-exec.svg?style=flat-square)](https://travis-ci.org/sarbbottam/watch-and-exec)
+[![version](https://img.shields.io/npm/v/watch-and-exec.svg?style=flat-square)](http://npm.im/watch-and-exec)
+[![downloads](https://img.shields.io/npm/dm/watch-and-exec.svg?style=flat-square)](http://npm-stat.com/charts.html?package=watch-and-exec&from=2015-08-01)
+[![MIT License](https://img.shields.io/npm/l/watch-and-exec.svg?style=flat-square)](http://opensource.org/licenses/MIT)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
+
 ## Usage
 
 ### `cli`
