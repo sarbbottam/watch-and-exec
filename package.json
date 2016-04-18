@@ -1,0 +1,50 @@
+{
+  "name": "watch-and-exec",
+  "description": "watch a directory and on any changes, execute the desired command",
+  "main": "src/index.js",
+  "files": [
+    "src/index.js"
+  ],
+  "bin": {
+    "watch-and-exec": "./src/index.js"
+  },
+  "scripts": {
+    "test": "node test/index.js",
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
+  },
+  "engines": {
+    "node": ">=5"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sarbbottam/watch-and-exec.git"
+  },
+  "keywords": [
+    "watch",
+    "execute"
+  ],
+  "author": "Sarbbottam Bandyopadhyay",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sarbbottam/watch-and-exec/issues"
+  },
+  "homepage": "https://github.com/sarbbottam/watch-and-exec",
+  "devDependencies": {
+    "commitizen": "^2.7.6",
+    "cz-conventional-changelog": "^1.1.5",
+    "ghooks": "^1.2.0",
+    "validate-commit-msg": "^2.5.0",
+    "semantic-release": "^4.3.5"
+  },
+  "config": {
+    "commitizen": {
+      "path": "cz-conventional-changelog"
+    },
+    "ghooks": {
+      "commit-msg": "validate-commit-msg"
+    }
+  },
+  "dependencies": {
+    "yargs": "^4.6.0"
+  }
+}
