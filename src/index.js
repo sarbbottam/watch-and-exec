@@ -10,7 +10,7 @@ function watch(dir, command) {
   },
   (event, filename) => {
     if (filename) {
-      exec(`${command} ${filename}`);
+      exec(command);
     }
   });
 }
