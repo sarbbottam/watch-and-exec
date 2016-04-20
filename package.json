@@ -9,7 +9,7 @@
     "watch-and-exec": "./src/index.js"
   },
   "scripts": {
-    "test": "node test/index.js",
+    "test": "xo && node test/index.js",
     "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
   "engines": {
@@ -33,8 +33,9 @@
     "commitizen": "^2.7.6",
     "cz-conventional-changelog": "^1.1.5",
     "ghooks": "^1.2.0",
+    "semantic-release": "^4.3.5",
     "validate-commit-msg": "^2.5.0",
-    "semantic-release": "^4.3.5"
+    "xo": "^0.14.0"
   },
   "config": {
     "commitizen": {
@@ -46,5 +47,9 @@
   },
   "dependencies": {
     "yargs": "^4.6.0"
+  },
+  "xo": {
+    "esnext": true,
+    "space": true
   }
 }

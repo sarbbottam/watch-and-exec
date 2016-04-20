@@ -24,6 +24,6 @@ const argv = require('yargs')
   .demand(['d', 'c'])
   .strict()
   .alias(options)
-  .argv
+  .argv;
 
 watch(argv.d, argv.c);
